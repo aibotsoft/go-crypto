@@ -1,0 +1,8 @@
+docs/*.md
+.openapi-generator/VERSION
+.gitignore
+.travis.yml
+go.mod
+go.sum
+git_push.sh
+README.md

@@ -1,6 +1,7 @@
 *.test
 *.out
 .env
+.jar
 vendor/
 .idea
 dist/

@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: API
+  version: 1.0.0
+servers:
+  - url: 'https://api.crypto.com/v2'
+security:
+  - session: []
+paths:
+  /public/get-instruments:
+    get:
+      tags:
+        - Bet
+      operationId: GetInstruments
+      parameters:
+        - in: path
+          name: order_id
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetInstrumentsResponse'
+components:
+  schemas:
+    GetInstrumentsResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+
+
+
+
